@@ -1,6 +1,6 @@
 # xkb-us-umlaut-capslock
 
-Disables the standard capslock function and uses capslock + aou/AOU for german Umlaut
+Disables the standard capslock function and uses capslock german Umlauts:
 
  - CapsLock + a = ä
  - CapsLock + u = ü
@@ -27,7 +27,7 @@ sudo cp usde /usr/share/X11/xkb/symbols/usde
 setxkbmap -model pc105 -layout usde -variant bouni
 ```
 
-To set this automatically, I use my `.bashrc` file which has the `setxkbmap ...` line in it. 
+To set this automatically, copy the `10-keyboard.conf` to `/etc/X11/xorg.conf.d/`
 
 ## Thanks
 
